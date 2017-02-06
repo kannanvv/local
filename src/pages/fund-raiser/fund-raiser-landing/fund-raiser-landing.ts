@@ -4,20 +4,23 @@ import {FundRaiserDetailsComponent} from '../fund-raiser-details/fund-raiser-det
 
 @Component({
   selector: 'page-fund-raiser',
-  templateUrl: 'fund-raiser.html'
+  templateUrl: 'fund-raiser-landing.html'
 })
-export class FundRaiserComponent {
 
-  constructor(public navCtrl: NavController) {}
+export class FundRaiserLandingComponent {
+constructor(public navCtrl: NavController) {
 
-  ionViewDidLoad() {
-    console.log('Hello FundRaiser Page');
-  }
 
-  navToFundRaiserDetails(){
-    this.navCtrl.push(FundRaiserDetailsComponent, {
-      item: "param"
-    });
-  }
+}
+
+ionViewDidLoad() {
+  console.log('Hello FundRaiser Page');
+}
+
+navToFundRaiserDetails(){
+  this.navCtrl.push(FundRaiserDetailsComponent, {
+    item: "param"
+  });
+}
 
 }

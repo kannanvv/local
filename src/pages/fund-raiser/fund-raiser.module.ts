@@ -1,15 +1,17 @@
 import { NgModule }           from '@angular/core';
 import { CommonModule }       from '@angular/common';
 import { FormsModule }        from '@angular/forms';
-import { AwesomePipe }        from './awesome.pipe';
-import
-       { ContactComponent }   from './contact.component';
-import { ContactService }     from './contact.service';
-import { HighlightDirective } from './highlight.directive';
+import { IonicApp, IonicModule } from 'ionic-angular';
+import { BrowserModule }  from '@angular/platform-browser';
+import { HttpModule, JsonpModule } from '@angular/http';
+import {FundRaiserDetailsComponent} from './fund-raiser-details/fund-raiser-details';
+import { FundRaiserLandingComponent } from './fund-raiser-landing/fund-raiser-landing';
+
+
 @NgModule({
-  imports:      [ CommonModule, FormsModule ],
-  declarations: [ ContactComponent, HighlightDirective, AwesomePipe ],
-  exports:      [ ContactComponent ],
-  providers:    [ ContactService ]
+  imports:      [BrowserModule, FormsModule, HttpModule, JsonpModule, CommonModule, IonicModule ],
+  declarations: [ FundRaiserLandingComponent, FundRaiserDetailsComponent ],
+  exports:      [ FundRaiserLandingComponent ],
+  providers:    [  ]
 })
 export class FundRaiserModule { }

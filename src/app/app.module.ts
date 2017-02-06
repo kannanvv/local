@@ -13,25 +13,48 @@ import { LibraryAudio } from '../pages/library-audio/library-audio';
 import { LibraryVideo } from '../pages/library-video/library-video';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { GalleryComponent } from '../pages/gallery/gallery';
-import { FundRaiserLandingComponent } from '../pages/fund-raiser/fund-raiser';
 import { EventsComponent } from '../pages/events/events';
 import { ArtifactsComponent } from '../pages/artifacts/artifacts';
 import { LibraryComponent } from '../pages/library/library';
 import { SettingsComponent } from '../pages/settings/settings';
 import {UtilService} from '../providers/utils';
-
+import {FundRaiserModule} from '../pages/fund-raiser/fund-raiser.module';
 
 @NgModule({
   declarations: [
-    MyApp, HomeComponent, GalleryComponent, FundRaiserLandingComponent,
-    EventsComponent, ArtifactsComponent, LibraryComponent, AboutUsComponent, SettingsComponent],
-  entryComponents: [MyApp, HomeComponent, GalleryComponent, FundRaiserLandingComponent,
-    EventsComponent, ArtifactsComponent, LibraryComponent, AboutUsComponent, SettingsComponent],
-  
-  imports: [IonicModule.forRoot(MyApp),BrowserModule,
-    FormsModule, HttpModule, JsonpModule,], 
-  bootstrap: [IonicApp],
-  providers: [UtilService]
+    MyApp, 
+    HomeComponent, 
+    GalleryComponent,
+    EventsComponent, 
+    ArtifactsComponent, 
+    LibraryComponent, 
+    AboutUsComponent, 
+    SettingsComponent
+  ],
+  entryComponents: [
+    MyApp, 
+    HomeComponent, 
+    GalleryComponent, 
+    EventsComponent, 
+    ArtifactsComponent, 
+    LibraryComponent, 
+    AboutUsComponent, 
+    SettingsComponent
+  ],
+  imports: [
+    IonicModule.forRoot(MyApp),
+    BrowserModule,
+    FormsModule, 
+    HttpModule, 
+    JsonpModule, 
+    FundRaiserModule
+  ], 
+  bootstrap: [
+    IonicApp
+  ],
+  providers: [
+    UtilService
+  ]
 })
 export class AppModule {}
 
