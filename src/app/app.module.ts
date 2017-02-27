@@ -17,9 +17,9 @@ import { EventsComponent } from '../pages/events/events';
 import { ArtifactsComponent } from '../pages/artifacts/artifacts';
 import { LibraryComponent } from '../pages/library/library';
 import { SettingsComponent } from '../pages/settings/settings';
-import {UtilService} from '../providers/utils';
-import {FundRaiserModule} from '../pages/fund-raiser/fund-raiser.module';
-
+import { UtilService } from '../providers/utils';
+import { FundRaiserModule } from '../pages/fund-raiser/fund-raiser.module';
+import { FundRaiserLandingComponent } from '../pages/fund-raiser/fund-raiser-landing/fund-raiser-landing';
 @NgModule({
   declarations: [
     MyApp, 
@@ -39,7 +39,8 @@ import {FundRaiserModule} from '../pages/fund-raiser/fund-raiser.module';
     ArtifactsComponent, 
     LibraryComponent, 
     AboutUsComponent, 
-    SettingsComponent
+    SettingsComponent,
+    FundRaiserLandingComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp),

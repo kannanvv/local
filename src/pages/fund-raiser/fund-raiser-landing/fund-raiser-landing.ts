@@ -8,7 +8,7 @@ import {FundRaiserDetailsComponent} from '../fund-raiser-details/fund-raiser-det
 })
 
 export class FundRaiserLandingComponent {
-constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) {
 
 
 }
